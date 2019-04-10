@@ -3,15 +3,24 @@
   <head>
     <meta charset="utf-8">
     <title>All About Me</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <nav>
-      <a href="contact.html" target="_blank">Contact Me!</a>
-      <a href="tell_me_more.html" target="_blank">Tell Me More</a>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="contact.html" target="_blank">Contact Me!</a></li>
+        <li><a href="tell_me_more.html" target="_blank">Tell Me More</a></li>
+      </ul>
     </nav><hr>
+    <main>
     <h1>Hello, World!</h1>
     <h2>My name is Alex Castillo</h2>
-    <img src="me.jpeg"
+    <img
+    id="profile-pic"
+    src="me.jpeg"
     alt="alex-castillo"
     width="250"
     height="250">
@@ -21,11 +30,21 @@
     </p>
     <div>
       Some of my favorite programming languages are:
-      <ul>
-        <li>Python</li>
-        <li>Ruby</li>
-        <li>JavaScript</li>
+      <ul id="wrapper">
+          <li class="language">
+            <h3>Ruby</h3>
+            <img src="ruby.jpg" alt="ruby"/>
+          </li>
+          <li class="language">
+            <h3>JavaScript</h3>
+            <img src="js.jpg" alt="js"/>
+          </li>
+          <li class="language">
+            <h3>Python</h3>
+            <img src="python.jpg" alt="python" />
+          </li>
       </ul>
     </div>
+    </main>
   </body>
 </html>
