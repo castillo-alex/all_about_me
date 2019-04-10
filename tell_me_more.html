@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tell Me More!</title>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" target="_blank">Home</a>
+      <a href="contact.html" target="_blank">Contact Me</a>
+      <a href="tell_me_more.html" target="_blank">Tell Me More</a>
+    </nav>
+    <h1>All About You!</h1>
+    <form class="" method="post">
+    <label for="first-name">First Name:</label>
+    <input type="text" id="first-name" name="first-name" placeholder="John" autofocus>
+    <label for="last-name">Last Name:</label>
+    <input type="text" id="last-name" name="last-name" placeholder="Doe">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="JDoe@none.com">
+    <label for="dob">DOB:</label>
+    <input type="date" id="dob" name="dob">
+    </form>
+    <form class="" method="post">
+      <br>
+      <label for="lovecoding">How much do you like to code?</label>
+      <input type="range" id="lovecoding" name="lovecoding">
+    </form>
+    <form>
+      <br>
+      <label>Skills (check all that apply)</label>
+      <input type="checkbox" name="lang1" value="Python">Python
+      <input type="checkbox" name="lang2" value="Ruby">Ruby
+      <input type="checkbox" name="lang3" value="JavaScript">JavaScript
+    </form>
+    <form class="" method="post">
+      <br>
+      <label>Favorite Language</label>
+      <select class="" name="lang">
+        <option value="default" selected>Select a language</option>
+        <option value="Python">Python</option>
+        <option value="Ruby">Ruby</option>
+        <option value="JavaScript">JavaScript</option>
+      </select>
+    </form>
+    <form action="/tell_me_more.html" method="post">
+      <br>
+      <label>Favorite Browser:</label>
+      <input list="favbrowser">
+      <datalist id="favbrowser">
+        <option value="Internet Explorer"></option>
+        <option value="Firefox">
+        <option value="Crome">
+        <option value="Safari">
+        <option value="Opera">
+      </datalist>
+    </form>
+    <form action="tell_me_more.html" method="post">
+      <br>
+      <label>White Space:</label>
+      <input type="radio" name="tabs" value="tab" checked>Tabs
+      <input type="radio" name="spaces" value="space">Spaces
+    </form>
+    <form action="tell_me_more.html" method="post">
+      <br>
+      <label for="spaces">How many spaces should a tab represent?</label>
+      <input type="number" id="spaces" name="spaces" min="1" max="5">
+    </form>
+    <form class="color" action="contact.html" method="post">
+      <br>
+      <label for="fcolor">Favorite web color:</label>
+      <input type="color" name="fcolor">
+    </form>
+    <button type="submit">Submit</button>
+    <input type="reset">
+  </body>
+</html>
